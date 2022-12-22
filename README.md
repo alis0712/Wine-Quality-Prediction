@@ -23,6 +23,7 @@ After implementation of the programming model, the dataset was loaded. The data 
 After the data was loaded, the function trainTestSplit was used which split the data between a training set and a test set. The test set contained a small fraction of observations (data validations), and the rest of the data set was used for training. I then checked if the data was pure which measured the extent to which a group of records share the same class, and then moved on to classify the data points as categorical or continuous training datasets. To do this, I created a function called determineTypeofFeature which determines whether there are categorical datasets or continuous datasets. In our case, the parameters “volatile_acidity”, “total_sulfur_dioxide”, “chlorides”, and “density” had the highest number of unique values and were therefore considered categorical. A table below summarizes which data sets were considered categorical and which data sets were considered continuous: 
 
 ![image](https://user-images.githubusercontent.com/62857780/209243888-a382a37d-e0b8-4904-8f65-0d68939db355.png)
+
 Once we split the data between categorical and continuous, I then created a function called obtainPotentialSplits, which splitted the unique column values exactly at the middle of two columns. A two-way split was used when determining the quality of the wine. A figure below shoes how the data points in each column were split:
 
 ![image](https://user-images.githubusercontent.com/62857780/209243925-82b49259-225b-49af-97c4-cf5ed681df75.png)
