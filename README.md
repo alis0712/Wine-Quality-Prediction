@@ -49,6 +49,7 @@ To begin the algorithm process I created a dictionary which determines the quali
 
 ## Decision Trees
 (i)	Entropy Based: 
+
 {'alcohol <= 10.525': [{'sulphates <= 0.625': [{'citrix_acid <= 0.055': [{'sulphates <= 0.525': [{'citrix_acid <= 0.045': [5.0,
                                                                                                                            3.0]},
                                                                                                  {'volatile_acidity = 0.58': [7.0,
@@ -79,6 +80,7 @@ To begin the algorithm process I created a dictionary which determines the quali
 
 
 (ii)	Gini Based
+
 {'alcohol <= 10.525': [{'sulphates <= 0.585': [{'alcohol <= 9.75': [{'pH <= 3.545': [{'density = 0.99888': [6.0,
                                                                                                             5.0]},
                                                                                      6.0]},
@@ -110,6 +112,7 @@ To begin the algorithm process I created a dictionary which determines the quali
                                                                                  6.0]}]}]}]}]}
 
 (iii)	Misclassification Error
+
 {'alcohol <= 10.25': [{'fixed_acidity <= 10.850000000000001': [{'volatile_acidity = 0.51': [{'alcohol <= 9.35': [5.0,
                                                                                                                  6.0]},
                                                                                             {'density = 0.9984': [{'free_sulfur_dioxide <= 17.5': [6.0,
@@ -171,11 +174,17 @@ The goal of this project was to analyze the wine dataset and predict the quality
 To further improve the accuracy of the model I then went ahead and did post pruning of the decision tree which improved the accuracy of the entropy-based decision tree to 75%. I could have improved the accuracy of the model by implementing a cross validation method since the data points would have been divided into n-folds and that would have performed training on 50% of the dataset and the rest of the 50% would have been used on the testing set. Another way the model could have been improved is by implementing a random forest tree algorithm since hunt’s algorithm only combines some decisions (for example fixed acidity vs volatile acidity) whereas the random forest algorithm combines several decision trees thereby improving the accuracy of the model, even though the algorithm is slower it still does a rigorous job on the training dataset thereby improving the accuracy of the model, and also averts the issue of overfitting by utilizing multiple decision trees. 
 
 ## References
+
 https://www.youtube.com/watch?v=sgQAhG5Q7iY
+
 https://towardsdatascience.com/decision-tree-algorithm-in-python-from-scratch-8c43f0e40173
+
 https://www.w3schools.com/python/default.asp
+
 https://www.kaggle.com/code/prashant111/decision-tree-classifier-tutorial/notebook
+
 https://allysonf.medium.com/predict-red-wine-quality-with-svc-decision-tree-and-random-forest-24f83b5f3408
+
 https://scikit-learn.org/stable/modules/cross_validation.html
 
 
