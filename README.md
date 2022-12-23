@@ -49,7 +49,7 @@ To begin the algorithm process I created a dictionary which determines the quali
 
 ## Decision Trees
 (i)	Entropy Based: 
-
+```
 {'alcohol <= 10.525': [{'sulphates <= 0.625': [{'citrix_acid <= 0.055': [{'sulphates <= 0.525': [{'citrix_acid <= 0.045': [5.0,
                                                                                                                            3.0]},
                                                                                                  {'volatile_acidity = 0.58': [7.0,
@@ -78,9 +78,9 @@ To begin the algorithm process I created a dictionary which determines the quali
                                
                                                                                         5.0]}]}]}]}]}
 
-
+```
 (ii)	Gini Based
-
+```
 {'alcohol <= 10.525': [{'sulphates <= 0.585': [{'alcohol <= 9.75': [{'pH <= 3.545': [{'density = 0.99888': [6.0,
                                                                                                             5.0]},
                                                                                      6.0]},
@@ -110,9 +110,9 @@ To begin the algorithm process I created a dictionary which determines the quali
                                                                                                {'fixed_acidity <= 10.7': [7.0,
                                          
                                                                                  6.0]}]}]}]}]}
-
+```
 (iii)	Misclassification Error
-
+```
 {'alcohol <= 10.25': [{'fixed_acidity <= 10.850000000000001': [{'volatile_acidity = 0.51': [{'alcohol <= 9.35': [5.0,
                                                                                                                  6.0]},
                                                                                             {'density = 0.9984': [{'free_sulfur_dioxide <= 17.5': [6.0,
@@ -139,7 +139,7 @@ To begin the algorithm process I created a dictionary which determines the quali
                                                                                                   {'density = 0.9976': [5.0,
                              
                                                                                            7.0]}]}]}]}]}
-
+```
 ## Classification and Accuracy
 Python Implementation: 
 After the tree was created, we then needed to classify our tree in terms of quality of the wine  and calculate an accuracy of the tree. To do this we first determined if the quality of the wine is good or bad and tested it on the sample random dataset given below:
